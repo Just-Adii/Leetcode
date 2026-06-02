@@ -8,16 +8,10 @@ public:
       {
         for(j=i+1;j<n;j++)
         {
-            if(i==j)
-            {
-                continue;
-            }
-            else
-            {
-                sum=nums[i]+nums[j];
-                if(sum==target)
-                break;
-            }
+            sum=nums[i]+nums[j];
+            if(sum==target)
+            break;
+            
         }
         if(sum==target)
         break;
