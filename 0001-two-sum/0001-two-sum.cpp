@@ -6,7 +6,7 @@ public:
       int sum;
       for(i=0;i<n-1;i++)
       {
-        for(j=0;j<n;j++)
+        for(j=i+1;j<n;j++)
         {
             if(i==j)
             {
@@ -15,8 +15,8 @@ public:
             else
             {
                 sum=nums[i]+nums[j];
-                        if(sum==target)
-        break;
+                if(sum==target)
+                break;
             }
         }
         if(sum==target)
